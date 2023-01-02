@@ -1,0 +1,57 @@
+.our-teacher {
+  position: relative;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: var(--color3);
+  height: 70rem;
+  margin-bottom: 20rem;
+  .container {
+    z-index: 99;
+    .card-list {
+      @include grid((3.5rem 4rem), repeat(4, 1fr));
+      &:first-child {
+        margin-bottom: 4rem;
+      }
+      .card__item {
+        transition: var(--trasition);
+        &:hover{
+          transition: var(--trasition);
+          box-shadow: 0 5px 15px 10px rgb(190 190 190 / 40%);
+          img{
+            transform: scale(1.05);
+
+          }
+        }
+        .card__image {
+          overflow: hidden;
+          img {
+            border-radius: 1rem 1rem 0 0;
+            transition: var(--trasition);
+          }
+        }
+        .card__desc {
+          background: var(--color4);
+          padding: 4rem 3rem;
+          border-radius: 0 0 1rem 1rem;
+          span {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--primary__color);
+          }
+          h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color2);
+            margin: 1.5rem;
+          }
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--color2);
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

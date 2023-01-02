@@ -1,0 +1,46 @@
+html{
+  scroll-behavior: smooth;
+}
+.scroll{
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background: var(--primary__color);
+    bottom: 10rem;
+    right: 2rem;
+    z-index: 99999;
+    transition: var(--trasition);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    line-height: 3rem;
+      border: 1px solid var(--color1);
+
+    i{
+      text-align: center;
+      color: var(--color1);
+      font-size: 2rem;
+      cursor: pointer;
+
+    }
+    &.active{
+      opacity: 1;
+      visibility: visible;
+      &:hover{
+      opacity: 1;
+      cursor: pointer;
+      box-shadow: none;
+      border: 1px solid var(--primary__color);
+      background: var(--color1);
+      i{
+        color: var(--primary__color);
+      cursor: pointer;
+
+
+      }
+    }
+    }
+}

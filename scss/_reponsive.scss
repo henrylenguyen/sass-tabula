@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px){
+  .carousel .container{
+    flex-direction: column;
+  }
+  .carousel .container h2{
+    max-width: 60rem;
+    font-size: 6rem;
+  }
+  .our-teacher .container .card-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-teacher {
+    margin-top: 25rem;
+    height:208rem;
+}
+.carousel .banner-2 {
+    bottom: -38%;
+}
+.find__course-container{
+  flex-direction: column;
+}
+.find__course .form__image{
+  max-width: 100%;
+}
+.find__course .form{
+  max-width: 100%;
+    margin-top: 40px;
+    margin-left: initial;
+}
+.footer__items{
+  flex-wrap: wrap;
+}
+.footer-item{
+      margin-bottom: 30px;
+    padding: 0 30px;
+    width: 50%;
+    
+  }
+  .footer-item li{
+    font-size: 1.3rem;
+
+}
+}
+@media screen and (max-width: 480px) {
+  .carousel .container h2{
+        font-size: 5rem;
+  }
+  .carousel .banner-2 {
+    bottom: -20%;
+}
+.our-teacher {
+    margin-top: 13rem;
+        height: 385rem;
+}
+.our-teacher .container .card-list {
+    grid-template-columns: 1fr;
+}
+.footer-item{
+  width: 100%;
+}
+}

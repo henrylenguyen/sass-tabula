@@ -1,0 +1,38 @@
+.carousel {
+  position: relative;
+  padding-top: 5rem;
+  height: 68rem;
+  transition: var(--trasition);
+  background-position: left;
+  background-size: cover;
+  .container {
+    @include flexbox(center);
+    position: relative;
+    padding-top: 10rem;
+    max-height: 50rem;
+    justify-content: space-between;
+    p {
+      color: var(--primary__color);
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    h2 {
+      color: var(--color2);
+      max-width: 60rem;
+      font-size: 7rem;
+      font-weight: bold;
+    }
+  }
+  .banner-1,
+  .banner-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .banner-1 {
+    top: 0;
+  }
+  .banner-2 {
+    bottom: -5px;
+  }
+}

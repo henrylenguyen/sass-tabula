@@ -1,0 +1,101 @@
+.find__course {
+  position: relative;
+  padding-bottom: 4rem;
+  &-container {
+    position: relative;
+    z-index: 50;
+    max-width: 90rem;
+    display: flex;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .form {
+    max-width: 45%;
+    background: var(--color1);
+    box-shadow: 0 0 1.5rem 1rem rgb(0 0 0 / 10%);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    z-index: 999;
+    &__image {
+      max-width: 50%;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--color2);
+      margin-bottom: 5rem;
+    }
+    &__group {
+      display: flex;
+      margin-bottom: -5px;
+    }
+    &__input {
+      width: 100%;
+      position: relative;
+      padding: 0 5px;
+      margin-bottom: 3rem;
+      input {
+        width: 100%;
+        display: block;
+        padding: 1rem 3rem;
+        border: 1px solid var(--color3);
+        border-radius: 2rem;
+        font-size: 1.3rem;
+      }
+      i {
+        color: var(--primary__color);
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+      }
+      select {
+        display: block;
+        width: 100%; 
+        padding: 1rem 3rem;
+        border: 1px solid var(--color3);
+        border-radius: 2rem;
+        color: #444;
+        outline: none;
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 1rem 3rem;
+        border: 1px solid var(--color3);
+        border-radius: 2.5rem;
+        resize: none;
+        font-size: 1.3rem;
+      }
+    }
+    button {
+      padding: 1.5rem 2.5rem;
+      background: var(--primary__color);
+      font-size: 1.5rem;
+      font-weight: 600;
+      border: 1px solid var(--primary__color);
+      color: var(--color1);
+      border-radius: 3rem;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 2em var(--primary__color);
+      transition: var(--trasition);
+      width: 40%;
+      letter-spacing: 2px;
+      &:hover{
+        background: var(--color1);
+    color: var(--color2);
+    box-shadow: none;
+      }
+    }
+  }
+  .banner-4{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .footer-item {
+    width: 100%;
+}
+}
